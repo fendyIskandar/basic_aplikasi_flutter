@@ -69,6 +69,79 @@ class MyApp extends StatelessWidget {
                           child: const Text("   Transfer  "),
                         ),
                       ]),
+                      Padding(padding: const EdgeInsets.only(top: 10)),
+                      Row(children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(
+                              color: Color.fromARGB(255, 0, 0, 0),
+                              width: 1,
+                            ),
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    height: 150,
+                                    width: 216,
+                                    decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://picsum.photos/150"),
+                                        fit: BoxFit.fitWidth,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(15.0),
+                                child: Column(
+                                  children: const [
+                                    Text("Pique Bilang Wasit Untungkan",
+                                        style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w500,
+                                        )),
+                                    Text("Madrid, Koeman Tepok Jidat",
+                                        style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w500,
+                                        )),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ]),
+                      Row(children: [
+                        Container(
+                          height: 40,
+                          width: 448,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(
+                              color: Color.fromARGB(255, 0, 0, 0),
+                              width: 1,
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Row(
+                              children: const [
+                                Text("Barcelona Feb 13, 2021",
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.w500,
+                                    )),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ])
                     ]))));
   }
 }
